@@ -1,0 +1,11 @@
+[project]
+name = "bert4tam"
+version = "0.1.0"
+description = "A project description"
+requires-python = ">=3.11.10"
+dependencies = [
+    "scikit-ollama>=0.3.0",
+    "pandas",
+    "numpy",
+    "openpyxl"
+]
