@@ -1,8 +1,8 @@
 # import libraries
 import pandas as pd
 from skllm.classification import ZeroShotGPTClassifier
-from datagen.key import key
-from datagen.prompts import PI # our custom prompt for perceived informativeness
+from datagen.key import key # substitute with your own key!
+from prompts import PI # our custom prompt for perceived informativeness
 # load data
 data = pd.read_excel("./data/Ikea1.xlsx")
 

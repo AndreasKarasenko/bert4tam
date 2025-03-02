@@ -2,7 +2,7 @@
 import pandas as pd
 from skollama.classification import ZeroShotOllamaClassifier
 from skllm.classification import ZeroShotGPTClassifier
-from datagen.prompts import PI # our custom prompt for perceived informativeness
+from prompts import PI # our custom prompt for perceived informativeness
 
 # load data
 data = pd.read_excel("./data/Ikea1.xlsx")
