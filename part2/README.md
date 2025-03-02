@@ -16,3 +16,5 @@ This folder contains the codes for our experiments.
 |[prompts](./prompts.py)| File that contains the prompts used in Ollama, gpt, or the main scripts.
 
 We recommend readers to look at the various Ollama files to understand how we make use of things like the structured output.
+
+For the results we refer to the [README](../README.md) on the main page.

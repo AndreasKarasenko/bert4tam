@@ -15,18 +15,23 @@ More details on the model can be found in [Rese et al. 2014](https://doi.org/10.
 For each construct we follow the following steps:
 
 1. Load the data
-2. 
+2. Select the relevant construct for train and test
+3. Define the BERT model from the NLPTown checkpoint using 5 output labels
+4. Preprocess the data using the NLPTown tokenizer (do NOT remove stopwords etc.)
+5. Train the model for 3 epochs using a low learning rate (2e-5)
+6. Save the model weights to final_eval/pretrained/...
+7. Predict the test labels
+8. Evaluate the performance
+9. Save all predictions under final_eval
 
 This folder contains the codes for our experiments.
 
 |File|Task|
 |------|-|
-|[./data/](./data/)| file to store your data in.
-|[main.py](./main.py)| Exemplary code to predict the perceived informativeness using Scikit-Ollama and Gemma2:9b.
-|Ollama*.py| Alternative approach using the Ollama chat module. Both files use the same concept and arrive at similar results. This approach is simply more verbose.
-|[main_gpt.py](./main_gpt.py)| ChatGPT alternative to main.py.
-|[gpt.py](./gpt.py)| ChatGPT alternative to Ollama*.py.
-|[key.py](./key.py)| File to store your OpenAI key in.
-|[prompts](./prompts.py)| File that contains the prompts used in Ollama, gpt, or the main scripts.
+|[./final_eval/](./final_eval/)| file to store your data in and to store fine-tuned models in once they are trained.
+|[./final_eval/pretrained](./final_eval/pretrained/)| file to store fine-tuned models in.
+|bert_base_multilingual_*.py| Script for each construct (and star rating) to train and predict a machine learning model.
+|[bert_random_sample.py](./bert_random_sample.py)| script to sample the data ONCE randomly.
+|[naive_Bayes_IKEA_gesamt.r](./naive_Bayes_IKEA_gesamt.r)| Naive bayes approach using R.
 
-We recommend readers to look at the various Ollama files to understand how we make use of things like the structured output.
+For the results we refer to the [README](../README.md) on the main page.

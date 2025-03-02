@@ -31,7 +31,21 @@ For our evaluation we use online customer reviews scraped from the Google Play S
 ![dataset](./img/datasets.png)
 
 ## Results
-The primary empirical results clearly show that 
+The primary empirical results clearly show that modern BERT based approaches outperform traditional models like Naive Bayes and Lexicons.
+
+![empirical results](./img/results.png)
+
+Similarly common quality metrics such as cronbachs $\alpha$ show a good fit (see the images [validity1.png](./img/validity1.png) and [validity2.png](./img/validity2.png))
+This effectively enables us to evaluate construct scores over time and validate our models in a conventional PLS-SEM.
+
+![TAM predictions over time1](./img/prediction%20over%20time1.png)
+![TAM predictions over time2](./img/prediction%20over%20time2.png)
+
+We can see for both images that we can identify clear down-trends in the app ratings which, after manual inspection, reveals past issues.
+
+![PLS-SEM of predicted TAM](./img/tam_results.png)
+
+Our predictions using machine learning are valid when used in a conventional PLS-SEM, further validating our approach.
 
 ## Citation
 TBD
